@@ -97,7 +97,7 @@
           //   return;
           // }
 
-          this.socket = io('http://0.0.0.0:3000', {
+          this.socket = io('http://localhost:3000', {
             // auth: {
             //   token: `Bearer ${token}`
             // },
@@ -137,8 +137,8 @@
     // app.component(Chat);
 
     const routes = [
-      { path: '/', component: Chat },
-      // { path: '/chat', component: Chat }
+      { path: '/', component: Home },
+      { path: '/chat', component: Chat }
     ];
 
     const router = VueRouter.createRouter({
